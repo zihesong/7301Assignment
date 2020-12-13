@@ -1,7 +1,7 @@
 # Assignment 1 - Part 2 & 3
 
 ### Part 2:    
-Since all the java files have been compiled properly, just run `$ java Java8ParserTest_Part_2 Test.java`.  
+Since all the java files have been compiled properly, just run `$ java Java8ParserTest_Part_2 Test.java`  
 The result will show all the boolean variables and corresponding line number in `if statement` with `length > 3` and used without `!`.  
 #### Result:
 ```
@@ -15,7 +15,7 @@ $ java Java8ParserTest_Part_2 Test.java
 ```
 
 ### Part 3:
-Run `$ java Java8ParserTest_Part_3 Test.java`.  
+Run `$ java Java8ParserTest_Part_3 Test.java`  
 Program will add new code to the input program for the boolean variables in Part 2 and print the whole code.  
 #### Result:
 ```java
