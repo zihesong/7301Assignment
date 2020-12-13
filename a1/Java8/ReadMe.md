@@ -19,8 +19,12 @@ Run `$ java Java8ParserTest_Part_3 Test.java`.
 Program will add new code to the input program for the boolean variables in Part 2 and print the whole code.  
 #### Result:
 ```java
-$ java Java8ParserTest_Part_2 Test.java
-/*
+$ java Java8ParserTest_Part_3 Test.java
+ ...
+ (For each variable, rewriter will print the whole code.)
+ ...
+ ########################## New Code Starts here ##########################
+ /*
  [The "BSD license"]
   Copyright (c) 2013 Terence Parr
   All rights reserved.
@@ -167,8 +171,8 @@ class Test {
                                         System.out.println("waiting for 1st pass");
                                         if ( threaded ){
                                 System.out.println("threaded 146");
-                                 while ( !firstPassDone ) { } // spin
-                                        System.out.println("2nd pass");}
+                                 while ( !firstPassDone ) { }} // spin
+                                        System.out.println("2nd pass");
                                         doFiles(javaFiles);
                                 }
                         }
@@ -188,12 +192,12 @@ class Test {
         public static void doFiles(List<String> files) throws Exception {
                 long parserStart = System.currentTimeMillis();
 //              lexerTime = 0;
-                if ( threaded ){
+                if ( threaded ) {
                                 System.out.println("threaded 167");
-                                 {
+
                         barrier = new CyclicBarrier(3,new Runnable() {
                                 public void run() {
-                                        report();} firstPassDone = true;
+                                        report(); firstPassDone = true;
                                 }
                         });
                         int chunkSize = files.size() / 3;  // 10/3 = 3
@@ -304,11 +308,13 @@ class Test {
 
                         // start parsing at the compilationUnit rule
                         ParserRuleContext t = parser.compilationUnit();
-                        ==if ( notree ){
+                        if ( notree ){
                                 System.out.println("notree 277");
-                                 parser.setBuildParseTree(false);}==
+                                 parser.setBuildParseTree(false);}
                         if ( gui ) t.inspect(parser);
-                        if ( printTree ) System.out.println(t.toStringTree(parser));
+                        if ( printTree ){
+                                System.out.println("printTree 279");
+                                 System.out.println(t.toStringTree(parser));}
                 }
                 catch (Exception e) {
                         System.err.println("parser exception: "+e);
