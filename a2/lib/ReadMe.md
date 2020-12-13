@@ -1,2 +1,2 @@
-# Set up  
+# Setup  
 In Eclipse, add `soot-3.3.0.jar` to the build path of project.
