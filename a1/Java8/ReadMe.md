@@ -21,8 +21,9 @@ Program will add new code to the input program for the boolean variables in Part
 ```java
 $ java Java8ParserTest_Part_3 Test.java
  ...
- (For each variable, rewriter will print the whole code.)
+ /* For each variable, rewriter will print the whole code.The last version is the final result. */
  ...
+ 
  ########################## New Code Starts here ##########################
  /*
  [The "BSD license"]
