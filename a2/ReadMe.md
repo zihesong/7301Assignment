@@ -31,7 +31,7 @@ virtualinvoke $r3.<java.io.PrintStream: void println(int)>(i0)
 return
 ```
 
-### Part 1:   
+### Part 1 - Finding Dominators:   
 Run `TestDominatorFinder.java`  
 Result:  
 ```
@@ -403,7 +403,7 @@ return 1 is dominated by if i0 <= i1 goto i8 = i0
 return 1 is dominated by return 1
 ```
 
-### Part 2:  
+### Part 2 - Call Graph Construction:  
 Run `TestSootCallGraph.java`  
 Result:  
 ```
@@ -422,13 +422,15 @@ Total Edges:12
 <Fish: void saySomething()> may call <java.lang.Object: void <clinit>()>
 ```
 
-### Part 3:  
+### Part 3 - Logging Method Calls:  
 Run `TestSootLogging.java`, output files are stored in Folder `/a2/sootOutput`.
 Result:  
 ```
 r1 = staticinvoke <Example: Animal selectAnimal()>()
 virtualinvoke r1.<Animal: void saySomething()>()
 ```
+
+### Part 3 - Tracing Heap Accesses:  
 Run `TestSootLoggingHeap.java`  
 Result:  
 ```
