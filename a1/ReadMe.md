@@ -1,3 +1,4 @@
-Assignment 1
+# Assignment 1
 
-1. Run `source setup.sh`.
+### Setup:  
+Run `source setup.sh`
