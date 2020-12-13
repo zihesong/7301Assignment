@@ -3,7 +3,7 @@
 ### Part 2:    
 Since all the java files have been compiled properly, just run `$ java Java8ParserTest_Part_2 Test.java`.  
 The result will show all the boolean variables and corresponding line number in `if statement` with `length > 3` and used without `!`.  
-Result:  
+Result:
 ```
 $ java Java8ParserTest_Part_2 Test.java
   threaded 146  
