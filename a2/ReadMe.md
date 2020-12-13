@@ -2,7 +2,7 @@
 
 ### Part 0:  
 Run `TestSoot.java`  
-Result:  
+#### Result:  
 ```
 r0 := @this: HelloThread$TestThread
 <HelloThread: int x> = 1
@@ -33,7 +33,7 @@ return
 
 ### Part 1 - Finding Dominators:   
 Run `TestDominatorFinder.java`  
-Result:  
+#### Result:  
 ```
 r0 := @this: GCD is dominated by r0 := @this: GCD
 specialinvoke r0.<java.lang.Object: void <init>()>() is dominated by r0 := @this: GCD
@@ -405,7 +405,7 @@ return 1 is dominated by return 1
 
 ### Part 2 - Call Graph Construction:  
 Run `TestSootCallGraph.java`  
-Result:  
+#### Result:  
 ```
 <Example: Animal selectAnimal()> may call <Cat: void <init>()>
 <Example: void main(java.lang.String[])> may call <Example: Animal selectAnimal()>
@@ -424,7 +424,7 @@ Total Edges:12
 
 ### Part 3 - Logging Method Calls:  
 Run `TestSootLogging.java`, output files are stored in Folder `/a2/sootOutput`.   
-Result:  
+#### Result:  
 ```
 r1 = staticinvoke <Example: Animal selectAnimal()>()
 virtualinvoke r1.<Animal: void saySomething()>()
@@ -432,7 +432,7 @@ virtualinvoke r1.<Animal: void saySomething()>()
 
 ### Part 3 - Tracing Heap Accesses:  
 Run `TestSootLoggingHeap.java`  
-Result:  
+#### Result:  
 ```
 Thread Thread-9 wrote static field <HelloThread: int x>
 Thread Thread-10 wrote static field <HelloThread: int x>
