@@ -423,7 +423,8 @@ Total Edges:12
 ```
 
 ### Part 3 - Logging Method Calls:  
-Run `TestSootLogging.java`, output files are stored in Folder `/a2/sootOutput`.   
+Run `TestSootLogging.java`  
+Output files are stored in Folder `/a2/sootOutput`.   
 #### Result:  
 ```
 r1 = staticinvoke <Example: Animal selectAnimal()>()
