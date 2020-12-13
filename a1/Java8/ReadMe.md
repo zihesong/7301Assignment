@@ -304,9 +304,9 @@ class Test {
 
                         // start parsing at the compilationUnit rule
                         ParserRuleContext t = parser.compilationUnit();
-                        if ( notree ){
+                        ==if ( notree ){
                                 System.out.println("notree 277");
-                                 parser.setBuildParseTree(false);}
+                                 parser.setBuildParseTree(false);}==
                         if ( gui ) t.inspect(parser);
                         if ( printTree ) System.out.println(t.toStringTree(parser));
                 }
