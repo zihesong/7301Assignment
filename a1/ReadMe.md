@@ -2,4 +2,4 @@
 
 ### Setup:  
 Run `source setup.sh`  
-Steps and result for each part are shown in subfolder.
+Steps and results for each part are shown in subfolder respectively.
